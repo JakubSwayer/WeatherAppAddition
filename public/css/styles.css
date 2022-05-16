@@ -1,0 +1,147 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+/* --------------------TARNSITION------------------------ */
+.whole-night, .whole-day, .clock-night,
+ .clock-day,.hour-day, .hour-night,.minute-day, .minute-night
+ ,.second-day, .second-night{
+   transition: 5s;
+ }
+
+
+/* --------------------CONTAINER------------------------ */
+.whole-night, .whole-day{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.whole-night{
+    background: #151D3B;
+    color: white;
+}
+.whole-day{
+    background: #EDCDBB;
+    color: #247881;
+}
+
+/* ---------------------CLOCK------------------------ */
+
+.clock-night, .clock-day {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  border-radius: 500px;
+  background-image: url(../images/clock.png);
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-night{
+  transition-delay: 1s;
+
+  box-shadow: -14px 14px 28px #090d1b,
+              14px -14px 28px #212d5b;
+}
+
+.clock-day{
+  transition-delay: 1s;
+
+  box-shadow: 14px 14px 28px #c9ae9f,
+            -14px -14px 28px #ffecd7;
+}
+
+/* ------------- TIPS ------------------ */
+.hour, .minute, .second {
+  position: absolute;
+}
+/* ------------- HOUR TIP ------------------ */
+.hour{
+  height: 220px;
+  width: 8px;
+  border-radius: 6px 6px 0 0;
+}
+.hour-day, .hour-night {
+  height: 110px;
+  width: 8px;
+  border-radius: 6px 6px 0 0;
+}
+.hour-day{
+      background: #3A3845;
+}
+.hour-night{
+    background-color: #EEEEEE;
+}
+
+
+
+/* ------------- MINUTE TIP ------------------ */
+.minute{
+  height: 280px;
+  width: 6px;
+  border-radius: 6px 6px 0 0;
+}
+.minute-day, .minute-night {
+  height: 140px;
+  width: 6px;
+  border-radius: 6px 6px 0 0;
+}
+.minute-day{
+  background: #247881;
+}
+.minute-night{
+    background-color: #22577E;
+}
+
+/* -------------SECOND TIP------------------ */
+.second{
+  height: 300px;
+  width: 2px;
+  border-radius: 6px 6px 0 0;
+}
+.second-day, .second-night {
+  height: 150px;
+  width: 2px;
+  border-radius: 6px 6px 0 0;
+}
+.second-day{
+  background: #FC4F4F;
+}
+.second-night{
+    background-color: #F25287;
+}
+
+
+/* -------------DOT & BUTTON------------------ */
+.dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 71px;
+  background: white;
+  box-shadow: -3px 3px 14px #080c18,
+    3px -3px 14px #222e5e;
+}
+.btnp {
+  position: fixed;
+  top: 5%;
+}
+/* ------------------ Weather Block----------------------- */
+/* ------------------ Weather Block----------------------- */
+/* ------------------ Weather Block----------------------- */
+
+.weather-block{
+  background-color: red;
+  width: 600px;
+  height: 400px;
+  margin-left: 10%;
+  border-radius: 30px;
+background: #151D3B;
+box-shadow:  32px -32px 63px #212d5b,
+             -32px 32px 63px #090d1b;
+}
