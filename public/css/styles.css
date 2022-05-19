@@ -2,36 +2,35 @@ body {
   padding: 0;
   margin: 0;
 }
+
 /* --------------------TARNSITION------------------------ */
 .whole-night, .whole-day, .clock-night,
- .clock-day,.hour-day, .hour-night,.minute-day, .minute-night
- ,.second-day, .second-night{
-   transition: 5s;
- }
-
+.clock-day, .hour-day, .hour-night, .minute-day, .minute-night, .second-day, .second-night {
+  transition: 5s;
+}
 
 /* --------------------CONTAINER------------------------ */
-.whole-night, .whole-day{
+.whole-night, .whole-day {
   position: fixed;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.whole-night{
-    background: #151D3B;
-    color: white;
+.whole-night {
+  background: #151D3B;
+  color: white;
 }
-.whole-day{
-    background: #EDCDBB;
-    color: #247881;
+
+.whole-day {
+  background: #EDCDBB;
+  color: #247881;
 }
 
 /* ---------------------CLOCK------------------------ */
-
 .clock-night, .clock-day {
   display: flex;
   width: 400px;
@@ -42,80 +41,85 @@ body {
   align-items: center;
 }
 
-.clock-night{
-  transition-delay: 1s;
-
+.clock-night {
+  /* transition-delay: 1s; */
   box-shadow: -14px 14px 28px #090d1b,
               14px -14px 28px #212d5b;
 }
 
-.clock-day{
-  transition-delay: 1s;
-
+.clock-day {
+  /* transition-delay: 1s; */
   box-shadow: 14px 14px 28px #c9ae9f,
-            -14px -14px 28px #ffecd7;
+    -14px -14px 28px #ffecd7;
 }
 
 /* ------------- TIPS ------------------ */
 .hour, .minute, .second {
   position: absolute;
 }
+
 /* ------------- HOUR TIP ------------------ */
-.hour{
+.hour {
   height: 220px;
   width: 8px;
   border-radius: 6px 6px 0 0;
 }
+
 .hour-day, .hour-night {
   height: 110px;
   width: 8px;
   border-radius: 6px 6px 0 0;
 }
-.hour-day{
-      background: #3A3845;
-}
-.hour-night{
-    background-color: #EEEEEE;
+
+.hour-day {
+  background: #3A3845;
 }
 
-
+.hour-night {
+  background-color: #EEEEEE;
+}
 
 /* ------------- MINUTE TIP ------------------ */
-.minute{
+.minute {
   height: 280px;
   width: 6px;
   border-radius: 6px 6px 0 0;
 }
+
 .minute-day, .minute-night {
   height: 140px;
   width: 6px;
   border-radius: 6px 6px 0 0;
 }
-.minute-day{
+
+.minute-day {
   background: #247881;
 }
-.minute-night{
-    background-color: #22577E;
+
+.minute-night {
+  background-color: #22577E;
 }
 
 /* -------------SECOND TIP------------------ */
-.second{
+.second {
   height: 300px;
   width: 2px;
   border-radius: 6px 6px 0 0;
 }
+
 .second-day, .second-night {
   height: 150px;
   width: 2px;
   border-radius: 6px 6px 0 0;
 }
-.second-day{
+
+.second-day {
   background: #FC4F4F;
 }
-.second-night{
-    background-color: #F25287;
-}
 
+.second-night {
+  background-color: #F25287;
+}
 
 /* -------------DOT & BUTTON------------------ */
 .dot {
@@ -125,23 +129,96 @@ body {
   border-radius: 71px;
   background: white;
   box-shadow: -3px 3px 14px #080c18,
-    3px -3px 14px #222e5e;
+              3px -3px 14px #222e5e;
 }
+
 .btnp {
   position: fixed;
   top: 5%;
 }
-/* ------------------ Weather Block----------------------- */
-/* ------------------ Weather Block----------------------- */
-/* ------------------ Weather Block----------------------- */
 
-.weather-block{
-  background-color: red;
-  width: 600px;
-  height: 400px;
+/* ------------------ Weather Block----------------------- */
+/* ------------------ Weather Block----------------------- */
+/* ------------------ Weather Block----------------------- */
+.weather-block {
+  width: 500px;
+  height: 250px;
   margin-left: 10%;
   border-radius: 30px;
-background: #151D3B;
-box-shadow:  32px -32px 63px #212d5b,
-             -32px 32px 63px #090d1b;
+  display: flex;
+  flex-wrap: wrap;
+  background: #151D3B;
+  box-shadow: 32px -32px 63px #212d5b,
+              -32px 32px 63px #090d1b;
+  font-family: 'Roboto Flex', sans-serif;
+
+}
+
+.temperature {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.selection {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y:scroll;
+  margin: auto;
+  align-items: center;
+
+
+}
+
+.description {
+  width: 80%;
+  height: 40%;
+  background-color: black;
+}
+
+button{
+  width: 80%;
+  margin: 10px auto;
+  border: 0;
+  background-color: transparent;
+  height: 15%;
+  color: inherit;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+button:focus {
+  outline: none;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+
+/* width */
+.selection::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.selection::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.selection::-webkit-scrollbar-thumb {
+  background: #090d1b;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.selection::-webkit-scrollbar-thumb:hover {
+  background: #090d1b;
 }

@@ -6,14 +6,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 
-var city;
-
 app.get('/', (req, res) => {
   res.sendFile(__dirname + "/index.html")
 })
 
 app.post('/', (req,res) => {
-  city = req.body.city_select;
+  var city = req.body.city_select;
   url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=f1231941a3a7d645b987724ca5d85de0&units=metric";
   https.get(url, (resp) => {
     resp.on("data", (data) => {
