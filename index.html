@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&family=Roboto+Flex:opsz,wght@8..144,200&family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/e4d41be2b6.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body onload="Clock()">
@@ -43,25 +43,27 @@
     <div class="weather-block">
 
       <div class="temperature">
-        <h1>40°C</h1>
-
+        <h1>Hej</h1>
+        <!-- <h2 id="weatherDescription">It's snowing</h2> -->
 
         <div class="description">
-
+          <h2 id="weatherDescription">Gdzie jesteś?</h2>
         </div>
 
       </div>
 
       <div class="selection">
-        <button action="/" method="post" name="city_select" type="button">Warszawa</button>
-        <button action="/" method="post" name="city_select" type="button">Gdańsk</button>
-        <button action="/" method="post" name="city_select" type="button">Kraków</button>
-        <button action="/" method="post" name="city_select" type="button">Poznań</button>
-        <button action="/" method="post" name="city_select" type="button">Toruń</button>
-        <button action="/" method="post" name="city_select" type="button">Rzeszów</button>
-        <button action="/" method="post" name="city_select" type="button">Lublin</button>
-        <button action="/" method="post" name="city_select" type="button">Szczecin</button>
-        <button action="/" method="post" name="city_select" type="button">Katowice</button>
+        <form id="selection" name="selection" action="/" method="post">
+          <button name="city_select" value="Warszawa" type="submit">Warszawa</button>
+          <button name="city_select" value="Gdańsk" type="submit">Gdańsk</button>
+          <button name="city_select" value="Kraków" type="submit">Kraków</button>
+          <button name="city_select" value="Poznań" type="submit">Poznań</button>
+          <button name="city_select" value="Toruń" type="submit">Toruń</button>
+          <button name="city_select" value="Rzeszów" type="submit">Rzeszów</button>
+          <button name="city_select" value="Lublin" type="submit">Lublin</button>
+          <button name="city_select" value="Szczecin" type="submit">Szczecin</button>
+          <button name="city_select" value="Katowice" type="submit">Katowice</button>
+        </form>
       </div>
 
     </div>
@@ -71,7 +73,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="script.js" charset="utf-8"></script>
+  <script src="js/script.js" charset="utf-8"></script>
 </body>
 
 </html>

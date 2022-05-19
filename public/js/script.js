@@ -19,3 +19,9 @@ check_box.addEventListener('change', function() {
     $('#id_minute-tip').toggleClass('minute-night minute-day');
     $('#id_second-tip').toggleClass('second-night second-day');
 });
+
+
+function sendPost(receivedValue){
+
+  document.forms["selection"].submit();
+}

@@ -161,6 +161,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  align-content: center;
 }
 
 h1 {
@@ -181,8 +182,7 @@ h1 {
 
 .description {
   width: 80%;
-  height: 40%;
-  background-color: black;
+  text-align: center;
 }
 
 button{
@@ -196,10 +196,12 @@ button{
   text-align: center;
 }
 
-button:focus {
+button:focus, button:hover {
   outline: none;
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
+  /* border-top: 1px solid grey; */
+  font-size: 1.5rem;
+  margin: 9px auto;
+
 }
 
 /* width */
