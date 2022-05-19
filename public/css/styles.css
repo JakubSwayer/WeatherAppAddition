@@ -3,9 +3,13 @@ body {
   margin: 0;
 }
 
-/* --------------------TARNSITION------------------------ */
-.whole-night, .whole-day, .clock-night,
-.clock-day, .hour-day, .hour-night, .minute-day, .minute-night, .second-day, .second-night {
+/* --------------------TRANSITION------------------------ */
+.whole-night, .whole-day,
+.clock-night, .clock-day,
+.hour-day, .hour-night,
+.minute-day, .minute-night,
+.second-day, .second-night,
+.weather-block-night, .weather-block-day {
   transition: 5s;
 }
 
@@ -50,7 +54,7 @@ body {
 .clock-day {
   /* transition-delay: 1s; */
   box-shadow: 14px 14px 28px #c9ae9f,
-    -14px -14px 28px #ffecd7;
+            -14px -14px 28px #ffecd7;
 }
 
 /* ------------- TIPS ------------------ */
@@ -140,7 +144,7 @@ body {
 /* ------------------ Weather Block----------------------- */
 /* ------------------ Weather Block----------------------- */
 /* ------------------ Weather Block----------------------- */
-.weather-block {
+.weather-block-night {
   width: 500px;
   height: 250px;
   margin-left: 10%;
@@ -150,6 +154,19 @@ body {
   background: #151D3B;
   box-shadow: 32px -32px 63px #212d5b,
               -32px 32px 63px #090d1b;
+  font-family: 'Roboto Flex', sans-serif;
+
+}
+.weather-block-day {
+  width: 500px;
+  height: 250px;
+  margin-left: 10%;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #EDCDBB;
+  box-shadow: 14px 14px 28px #c9ae9f,
+            -14px -14px 28px #ffecd7;
   font-family: 'Roboto Flex', sans-serif;
 
 }

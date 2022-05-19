@@ -18,6 +18,7 @@ check_box.addEventListener('change', function() {
     $('#id_hour-tip').toggleClass('hour-night hour-day');
     $('#id_minute-tip').toggleClass('minute-night minute-day');
     $('#id_second-tip').toggleClass('second-night second-day');
+    $('#id_weather_block').toggleClass('weather-block-night weather-block-day');
 });
 
 
